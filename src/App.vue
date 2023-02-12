@@ -29,10 +29,14 @@ const CalculateWinner = (squares) => {
   return null;
 }
 
+const winner = computed(() => CalculateWinner(board.value.flat()));
+
 </script>
 
 <template>
-  <h1>Hello World</h1>
+  <main class="">
+    <h1>Tic Tac Toe</h1>
+  </main>
 </template>
 
 
@@ -41,5 +45,9 @@ const CalculateWinner = (squares) => {
   font-family: Config;
   src: local("Config"),
     url(./fonts/Config/ConfigCondensed-MediumItalic.otf) format("truetype");
+}
+
+* {
+  font-family: Config;
 }
 </style>
