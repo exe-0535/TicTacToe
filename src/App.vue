@@ -1,17 +1,12 @@
+<script setup>
+
+
+</script>
+
 <template>
-  <Board />
+  <h1>Hello World</h1>
 </template>
 
-<script>
-import Board from './components/Board.vue'
-
-export default {
-  name: 'App',
-  components: {
-    Board
-  }
-}
-</script>
 
 <style>
 @font-face {
