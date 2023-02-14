@@ -34,8 +34,8 @@ const winner = computed(() => CalculateWinner(board.value.flat()));
 </script>
 
 <template>
-  <main class="">
-    <h1>Tic Tac Toe</h1>
+  <main class="pt-8 text-center">
+    <h1 class="mb-6 text-3xl">Tic Tac Toe</h1>
   </main>
 </template>
 
@@ -47,7 +47,7 @@ const winner = computed(() => CalculateWinner(board.value.flat()));
     url(./fonts/Config/ConfigCondensed-MediumItalic.otf) format("truetype");
 }
 
-* {
+h1 {
   font-family: Config;
 }
 </style>
