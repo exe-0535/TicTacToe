@@ -43,12 +43,12 @@ const winner = computed(() => CalculateWinner(board.value.flat()));
     <div class="flex flex-col items-center mb-9">
       <div v-for="(row, x) in board" :key="x" class="flex">
         <div v-for="(cell, y) in row" :key="y" @click="MakeMove(x, y)"
-          :class="`border-2 border-white w-40 h-40 hover:bg-slate-700 duration-500 flex items-center justify-center text-4xl cursor-pointer`">
+          :class="`border-2 border-white w-40 h-40 shadow-md bg-purple-900 bg-opacity-70 hover:bg-slate-700 duration-500 flex items-center justify-center text-4xl cursor-pointer`">
         </div>
       </div>
     </div>
 
-</main>
+  </main>
 </template>
 
 
