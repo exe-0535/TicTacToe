@@ -34,16 +34,16 @@ const winner = computed(() => CalculateWinner(board.value.flat()));
 </script>
 
 <template>
-  <main class="pt-8 text-center bg-slate-800 min-h-screen">
+  <main class="pt-8 text-center bg-slate-900 min-h-screen">
 
-    <h1 class="mb-8 text-8xl font-bold uppercase ">Tic Tac Toe</h1>
+    <h1 class="mb-8 text-8xl uppercase ">Tic Tac Toe</h1>
 
-    <h3 class="text-6xl mb-20">It's now {{ player }}'s turn</h3>
+    <h3 class="text-4xl mb-20">It's now {{ player }}'s turn</h3>
 
     <div class="flex flex-col items-center mb-9">
       <div v-for="(row, x) in board" :key="x" class="flex">
         <div v-for="(cell, y) in row" :key="y" @click="MakeMove(x, y)"
-          :class="`border-2 border-white w-40 h-40 shadow-md bg-purple-900 bg-opacity-70 hover:bg-slate-700 duration-500 flex items-center justify-center text-4xl cursor-pointer`">
+          :class="`border-2 border-slate-200 w-40 h-40 shadow-md bg-slate-800 bg-opacity-70 hover:bg-slate-700 duration-500 flex items-center justify-center text-4xl cursor-pointer`">
         </div>
       </div>
     </div>
@@ -65,11 +65,6 @@ const winner = computed(() => CalculateWinner(board.value.flat()));
 
 h1,
 h3 {
-  color: lightgrey;
-  text-shadow:
-    -3px -3px 0 #000,
-    3px -3px 0 #000,
-    -3px 3px 0 #000,
-    3px 3px 0 #000;
+  color: #C7D5C8;
 }
 </style>
